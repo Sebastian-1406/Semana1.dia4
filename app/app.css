@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root{
+    --celeste-claro : hsl(185, 75%, 39%);
+    --azul-oscuro : hsl(229, 23%, 23%);
+    --gris-oscuro : hsl(227, 10%, 46%);
+    --gris-claro : hsl(0, 0%, 59%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+    background: var(--celeste-claro);
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: -700px -560px , 200px 350px;
+}
+.contendor__flex{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    margin: 0px 20px;
+    min-width: 300px;
+    max-width: 375px;
+}
+
+.contenedor__imagen-card{
+    width: 100%;
+    vertical-align: middle;
+    
+}
+.contenedor__imagen-absoluto{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+}
+
+.contenedor__imagen-victor{
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.contenedor__informacion{
+    padding: 20px;
+    padding-top: 90px;
+    border-bottom: 1px solid var(--gris-claro);
+}
+.contenedor__informacion-nombre{
+    text-align: center;
+    color: var(--azul-oscuro);
+    font-size: 23px;
+}
+.contenedor__informacion-edad{
+    font-weight: 100;
+    font-size: 20px;
+    color: var(--gris-oscuro);
+}
+.contenedor__informacion-lugar{
+    margin: 10px 0;
+    text-align: center;
+    color: var(--gris-oscuro);
+}
+
+.contenedor__estadistica{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+
+.contenido__favorito-titulo{
+    text-align: center;
+    color: var(--azul-oscuro);
+
+}
+.contenido__favorito-texto{
+    font-size: 13px;
+    text-align: center;
+    font-size: 100;
+    color: var(--gris-claro);
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width:450px){
+    body{
+        background-position: -690px -700px , 200px 200px;
+    }    
+}
+
+@media screen and (min-width:700px) {
+
+    body{
+        background-position: -300px -560px , 700px 300px;
+    }
+    
+}
